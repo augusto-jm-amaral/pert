@@ -1,0 +1,15 @@
+.row {
+  margin-top: 10vh; }
+  .row .card .readme p {
+    text-align: justify;
+    font-weight: 600; }
+    .row .card .readme p.paragraph {
+      margin-bottom: 10px; }
+  .row .card .card-action a {
+    font-weight: 600;
+    opacity: 1;
+    transition: all .2s ease !important; }
+    .row .card .card-action a:hover {
+      opacity: .8; }
+    .row .card .card-action a.begin {
+      width: 100%; }
