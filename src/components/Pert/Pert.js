@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import './Pert.css'
 
 import ProjectList from './../ProjectList/ProjectList'
+import ProjectForm from './../ProjectForm/ProjectForm'
 
-const Pert = ({projects}) => {
-	return (
+class Pert extends Component {
+	constructor(props) {
+		super(props)
+		const { projects } = props
+		this.state = { 
+			projects,
+			adding: false
+		}
+	}
+
+	render() {
+		const { projects } = this.state
+
+		return (
 			<div className="row">
 				<div className="col s1 m2" />
 			  <div className="col s11 m8">
@@ -20,9 +33,11 @@ const Pert = ({projects}) => {
 			      <b>Atenção</b>, esta lista sera salva em seu navegador.
 			    </blockquote>
 			    <ProjectList projects={projects}/>
+			    <ProjectForm />
 			  </div>
 			</div>
-	)
+		)
+	}
 }
 
 export default Pert

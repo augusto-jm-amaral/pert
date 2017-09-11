@@ -8,7 +8,7 @@ class App extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			begin: false,
+			begin: true,
 			projects: []
 		}
 		this.doBegin = this.doBegin.bind(this)
