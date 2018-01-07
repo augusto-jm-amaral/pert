@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './App.scss'
 
 import Welcome from './components/Welcome/Welcome'
 import Pert from './components/Pert/Pert'
